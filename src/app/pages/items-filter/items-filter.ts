@@ -5,14 +5,14 @@ import { ConferenceData } from '../../providers/conference-data';
 
 
 @Component({
-  selector: 'page-schedule-filter',
-  templateUrl: 'schedule-filter.html',
-  styleUrls: ['./schedule-filter.scss'],
+  selector: 'page-items-filter',
+  templateUrl: 'items-filter.html',
+  styleUrls: ['./items-filter.scss'],
 })
-export class ScheduleFilterPage {
+export class itemsFilterPage {
   ios: boolean;
 
-  tracks: {name: string, icon: string, isChecked: boolean}[] = [];
+  categorias: {name: string, icon: string, isChecked: boolean}[] = [];
 
   constructor(
     public confData: ConferenceData,
@@ -25,11 +25,11 @@ export class ScheduleFilterPage {
     this.ios = this.config.get('mode') === `ios`;
 
     // passed in array of track names that should be excluded (unchecked)
-    const excludedTrackNames = this.navParams.get('excludedTracks');
+    const excludedTrackNames = this.navParams.get('excludedcategorias');
 
-    this.confData.getTracks().subscribe((tracks: any[]) => {
-      tracks.forEach(track => {
-        this.tracks.push({
+    this.confData.getcategorias().subscribe((categorias: any[]) => {
+      categorias.forEach(track => {
+        this.categorias.push({
           name: track.name,
           icon: track.icon,
           isChecked: (excludedTrackNames.indexOf(track.name) === -1)
@@ -40,14 +40,14 @@ export class ScheduleFilterPage {
 
   selectAll(check: boolean) {
     // set all to checked or unchecked
-    this.tracks.forEach(track => {
+    this.categorias.forEach(track => {
       track.isChecked = check;
     });
   }
 
   applyFilters() {
     // Pass back a new array of track names to exclude
-    const excludedTrackNames = this.tracks.filter(c => !c.isChecked).map(c => c.name);
+    const excludedTrackNames = this.categorias.filter(c => !c.isChecked).map(c => c.name);
     this.dismiss(excludedTrackNames);
   }
 

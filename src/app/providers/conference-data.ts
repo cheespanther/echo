@@ -25,25 +25,25 @@ export class ConferenceData {
 
   processData(data: any) {
     // just some good 'ol JS fun with objects and arrays
-    // build up the data by linking speakers to sessions
+    // build up the data by linking proveedors to sessions
     this.data = data;
 
-    // loop through each day in the schedule
-    this.data.schedule.forEach((day: any) => {
+    // loop through each day in the items
+    this.data.items.forEach((day: any) => {
       // loop through each timeline group in the day
       day.groups.forEach((group: any) => {
         // loop through each session in the timeline group
         group.sessions.forEach((session: any) => {
-          session.speakers = [];
-          if (session.speakerNames) {
-            session.speakerNames.forEach((speakerName: any) => {
-              const speaker = this.data.speakers.find(
-                (s: any) => s.name === speakerName
+          session.proveedors = [];
+          if (session.proveedorNames) {
+            session.proveedorNames.forEach((proveedorName: any) => {
+              const proveedor = this.data.proveedors.find(
+                (s: any) => s.name === proveedorName
               );
-              if (speaker) {
-                session.speakers.push(speaker);
-                speaker.sessions = speaker.sessions || [];
-                speaker.sessions.push(session);
+              if (proveedor) {
+                session.proveedors.push(proveedor);
+                proveedor.sessions = proveedor.sessions || [];
+                proveedor.sessions.push(session);
               }
             });
           }
@@ -57,12 +57,12 @@ export class ConferenceData {
   getTimeline(
     dayIndex: number,
     queryText = '',
-    excludeTracks: any[] = [],
+    excludecategorias: any[] = [],
     segment = 'all'
   ) {
     return this.load().pipe(
       map((data: any) => {
-        const day = data.schedule[dayIndex];
+        const day = data.items[dayIndex];
         day.shownSessions = 0;
 
         queryText = queryText.toLowerCase().replace(/,|\.|-/g, ' ');
@@ -73,7 +73,7 @@ export class ConferenceData {
 
           group.sessions.forEach((session: any) => {
             // check if this session should show or not
-            this.filterSession(session, queryWords, excludeTracks, segment);
+            this.filterSession(session, queryWords, excludecategorias, segment);
 
             if (!session.hide) {
               // if this session is not hidden then this group should show
@@ -91,7 +91,7 @@ export class ConferenceData {
   filterSession(
     session: any,
     queryWords: string[],
-    excludeTracks: any[],
+    excludecategorias: any[],
     segment: string
   ) {
     let matchesQueryText = false;
@@ -107,12 +107,12 @@ export class ConferenceData {
       matchesQueryText = true;
     }
 
-    // if any of the sessions tracks are not in the
-    // exclude tracks then this session passes the track test
-    let matchesTracks = false;
-    session.tracks.forEach((trackName: string) => {
-      if (excludeTracks.indexOf(trackName) === -1) {
-        matchesTracks = true;
+    // if any of the sessions categorias are not in the
+    // exclude categorias then this session passes the track test
+    let matchescategorias = false;
+    session.categorias.forEach((trackName: string) => {
+      if (excludecategorias.indexOf(trackName) === -1) {
+        matchescategorias = true;
       }
     });
 
@@ -128,13 +128,13 @@ export class ConferenceData {
     }
 
     // all tests must be true if it should not be hidden
-    session.hide = !(matchesQueryText && matchesTracks && matchesSegment);
+    session.hide = !(matchesQueryText && matchescategorias && matchesSegment);
   }
 
-  getSpeakers() {
+  getproveedors() {
     return this.load().pipe(
       map((data: any) => {
-        return data.speakers.sort((a: any, b: any) => {
+        return data.proveedors.sort((a: any, b: any) => {
           const aName = a.name.split(' ').pop();
           const bName = b.name.split(' ').pop();
           return aName.localeCompare(bName);
@@ -143,10 +143,10 @@ export class ConferenceData {
     );
   }
 
-  getTracks() {
+  getcategorias() {
     return this.load().pipe(
       map((data: any) => {
-        return data.tracks.sort();
+        return data.categorias.sort();
       })
     );
   }

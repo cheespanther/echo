@@ -1,12 +1,19 @@
-# Ionic Angular Conference Application
+# ECHOMERCIO
 
-This application is purely a kitchen-sink demo of the Ionic Framework and Angular.
+Esta aplicacion es para adminstrar una red social de economia circular desarrollada con Ionic Framework y Angular.
 
-**There is not an actual Ionic Conference at this time.** This project is just to show off Ionic components in a real-world application. Please go through the steps in [CONTRIBUTING](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) before submitting an issue.
+**Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas. La base de datos de comercios se genero con datos del DENUE de la INEGI**
+
+Tipos de usuarios:
+
+1. Usuario normal - puede consultar anuncios y comercios y contactar a otros. Puede hacer pagos pero no cobros.
+2. Usuario empresarial - puede hacer anuncios y vender sus productos y servicios a traves de la aplicacion. Tiene acceso a un centro de pagos.
+3. Administrador -
 
 
-## Table of Contents
-- [Getting Started](#getting-started)
+
+## Contenido
+- [Arrancar la app](#getting-started)
 - [Contributing](#contributing)
 - [App Preview](#app-preview)
 - [Deploying](#deploying)
@@ -15,7 +22,11 @@ This application is purely a kitchen-sink demo of the Ionic Framework and Angula
   - [iOS](#ios)
 
 
-## Getting Started
+## Arrancar la app
+
+### Dependencias
+
+
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`

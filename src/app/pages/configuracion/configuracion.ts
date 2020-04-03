@@ -2,26 +2,26 @@ import { Component } from '@angular/core';
 
 import { PopoverController } from '@ionic/angular';
 
-import { PopoverPage } from '../about-popover/about-popover';
+import { configuracionPopover } from '../configuracion-popover/configuracion-popover';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html',
-  styleUrls: ['./about.scss'],
+  selector: 'page-configuracion',
+  templateUrl: 'configuracion.html',
+  styleUrls: ['./configuracion.scss'],
 })
-export class AboutPage {
-  location = 'madison';
+export class configuracionPage {
+  location = 'cdmx';
   conferenceDate = '2047-05-17';
 
   selectOptions = {
-    header: 'Select a Location'
+    header: 'Selecciona una ubicacion'
   };
 
   constructor(public popoverCtrl: PopoverController) { }
 
   async presentPopover(event: Event) {
     const popover = await this.popoverCtrl.create({
-      component: PopoverPage,
+      component: configuracionPopover,
       event
     });
     await popover.present();

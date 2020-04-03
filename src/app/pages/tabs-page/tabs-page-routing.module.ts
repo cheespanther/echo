@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
-import { SchedulePage } from '../schedule/schedule';
+import { itemsPage } from '../items/items';
 
 
 const routes: Routes = [
@@ -10,11 +10,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'schedule',
+        path: 'items',
         children: [
           {
             path: '',
-            component: SchedulePage,
+            component: itemsPage,
           },
           {
             path: 'session/:sessionId',
@@ -23,19 +23,19 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'speakers',
+        path: 'proveedors',
         children: [
           {
             path: '',
-            loadChildren: () => import('../speaker-list/speaker-list.module').then(m => m.SpeakerListModule)
+            loadChildren: () => import('../proveedor-list/proveedor-list.module').then(m => m.proveedorListModule)
           },
           {
             path: 'session/:sessionId',
             loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
           },
           {
-            path: 'speaker-details/:speakerId',
-            loadChildren: () => import('../speaker-detail/speaker-detail.module').then(m => m.SpeakerDetailModule)
+            path: 'proveedor-details/:proveedorId',
+            loadChildren: () => import('../proveedor-detail/proveedor-detail.module').then(m => m.proveedorDetailModule)
           }
         ]
       },
@@ -49,17 +49,17 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'about',
+        path: 'configuracion',
         children: [
           {
             path: '',
-            loadChildren: () => import('../about/about.module').then(m => m.AboutModule)
+            loadChildren: () => import('../configuracion/configuracion.module').then(m => m.configuracionModule)
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/app/tabs/schedule',
+        redirectTo: '/app/tabs/items',
         pathMatch: 'full'
       }
     ]
@@ -71,4 +71,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule { }
-

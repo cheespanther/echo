@@ -4,12 +4,12 @@ import { TestBed, async } from '@angular/core/testing';
 import { ActionSheetController } from '@ionic/angular';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
-import { SpeakerListPage } from './speaker-list';
+import { proveedorListPage } from './proveedor-list';
 import { ConferenceData } from '../../providers/conference-data';
 
 const confDataSub = {};
 
-describe('SpeakerListPage', () => {
+describe('proveedorListPage', () => {
   let fixture, app;
   beforeEach(async(() => {
     const actionSheetSpy = jasmine.createSpyObj('ActionSheetController', [
@@ -19,7 +19,7 @@ describe('SpeakerListPage', () => {
     const iabSpy = jasmine.createSpyObj('InAppBrowser', ['create']);
 
     TestBed.configureTestingModule({
-      declarations: [SpeakerListPage],
+      declarations: [proveedorListPage],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       providers: [
         { provide: ActionSheetController, useValue: actionSheetSpy },
@@ -30,10 +30,10 @@ describe('SpeakerListPage', () => {
     }).compileComponents();
   }));
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpeakerListPage);
+    fixture = TestBed.createComponent(proveedorListPage);
     app = fixture.debugElement.componentInstance;
   });
-  it('should create the speaker list page', () => {
+  it('should create the proveedor list page', () => {
     expect(app).toBeTruthy();
   });
 });

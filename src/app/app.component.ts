@@ -20,13 +20,13 @@ import { UserData } from './providers/user-data';
 export class AppComponent implements OnInit {
   appPages = [
     {
-      title: 'Schedule',
-      url: '/app/tabs/schedule',
+      title: 'items',
+      url: '/app/tabs/items',
       icon: 'calendar'
     },
     {
-      title: 'Speakers',
-      url: '/app/tabs/speakers',
+      title: 'proveedors',
+      url: '/app/tabs/proveedors',
       icon: 'people'
     },
     {
@@ -35,8 +35,8 @@ export class AppComponent implements OnInit {
       icon: 'map'
     },
     {
-      title: 'About',
-      url: '/app/tabs/about',
+      title: 'configuracion',
+      url: '/app/tabs/configuracion',
       icon: 'information-circle'
     }
   ];
@@ -117,7 +117,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.userData.logout().then(() => {
-      return this.router.navigateByUrl('/app/tabs/schedule');
+      return this.router.navigateByUrl('/app/tabs/items');
     });
   }
 
