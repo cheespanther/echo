@@ -8,9 +8,9 @@ import { TabsPageRoutingModule } from './tabs-page-routing.module';
 import { configuracionModule } from '../configuracion/configuracion.module';
 import { MapModule } from '../map/map.module';
 import { itemsModule } from '../items/items.module';
-import { SessionDetailModule } from '../session-detail/session-detail.module';
-import { proveedorDetailModule } from '../proveedor-detail/proveedor-detail.module';
-import { proveedorListModule } from '../proveedor-list/proveedor-list.module';
+import { itemDetailModule } from '../item-detail/item-detail.module';
+import { miembroDetailModule } from '../miembro-detail/miembro-detail.module';
+import { miembroListModule } from '../miembro-list/miembro-list.module';
 
 @NgModule({
   imports: [
@@ -19,9 +19,9 @@ import { proveedorListModule } from '../proveedor-list/proveedor-list.module';
     IonicModule,
     MapModule,
     itemsModule,
-    SessionDetailModule,
-    proveedorDetailModule,
-    proveedorListModule,
+    itemDetailModule,
+    miembroDetailModule,
+    miembroListModule,
     TabsPageRoutingModule
   ],
   declarations: [

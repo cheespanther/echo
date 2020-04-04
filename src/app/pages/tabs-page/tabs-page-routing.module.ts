@@ -17,25 +17,25 @@ const routes: Routes = [
             component: itemsPage,
           },
           {
-            path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
+            path: 'item/:itemId',
+            loadChildren: () => import('../item-detail/item-detail.module').then(m => m.itemDetailModule)
           }
         ]
       },
       {
-        path: 'proveedors',
+        path: 'miembro',
         children: [
           {
             path: '',
-            loadChildren: () => import('../proveedor-list/proveedor-list.module').then(m => m.proveedorListModule)
+            loadChildren: () => import('../miembro-list/miembro-list.module').then(m => m.miembroListModule)
           },
           {
-            path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
+            path: 'item/:itemId',
+            loadChildren: () => import('../item-detail/item-detail.module').then(m => m.itemDetailModule)
           },
           {
-            path: 'proveedor-details/:proveedorId',
-            loadChildren: () => import('../proveedor-detail/proveedor-detail.module').then(m => m.proveedorDetailModule)
+            path: 'miembro-details/:miembroId',
+            loadChildren: () => import('../miembro-detail/miembro-detail.module').then(m => m.miembroDetailModule)
           }
         ]
       },

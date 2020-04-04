@@ -25,25 +25,25 @@ export class ConferenceData {
 
   processData(data: any) {
     // just some good 'ol JS fun with objects and arrays
-    // build up the data by linking proveedors to sessions
+    // build up the data by linking miembro to items
     this.data = data;
 
     // loop through each day in the items
     this.data.items.forEach((day: any) => {
       // loop through each timeline group in the day
       day.groups.forEach((group: any) => {
-        // loop through each session in the timeline group
-        group.sessions.forEach((session: any) => {
-          session.proveedors = [];
-          if (session.proveedorNames) {
-            session.proveedorNames.forEach((proveedorName: any) => {
-              const proveedor = this.data.proveedors.find(
-                (s: any) => s.name === proveedorName
+        // loop through each item in the timeline group
+        group.items.forEach((item: any) => {
+          item.miembro = [];
+          if (item.miembroNames) {
+            item.miembroNames.forEach((miembroName: any) => {
+              const miembro = this.data.miembro.find(
+                (s: any) => s.name === miembroName
               );
-              if (proveedor) {
-                session.proveedors.push(proveedor);
-                proveedor.sessions = proveedor.sessions || [];
-                proveedor.sessions.push(session);
+              if (miembro) {
+                item.miembro.push(miembro);
+                miembro.items = miembro.items || [];
+                miembro.items.push(item);
               }
             });
           }
@@ -63,7 +63,7 @@ export class ConferenceData {
     return this.load().pipe(
       map((data: any) => {
         const day = data.items[dayIndex];
-        day.shownSessions = 0;
+        day.shownitems = 0;
 
         queryText = queryText.toLowerCase().replace(/,|\.|-/g, ' ');
         const queryWords = queryText.split(' ').filter(w => !!w.trim().length);
@@ -71,14 +71,14 @@ export class ConferenceData {
         day.groups.forEach((group: any) => {
           group.hide = true;
 
-          group.sessions.forEach((session: any) => {
-            // check if this session should show or not
-            this.filterSession(session, queryWords, excludecategorias, segment);
+          group.items.forEach((item: any) => {
+            // check if this item should show or not
+            this.filteritem(item, queryWords, excludecategorias, segment);
 
-            if (!session.hide) {
-              // if this session is not hidden then this group should show
+            if (!item.hide) {
+              // if this item is not hidden then this group should show
               group.hide = false;
-              day.shownSessions++;
+              day.shownitems++;
             }
           });
         });
@@ -88,39 +88,39 @@ export class ConferenceData {
     );
   }
 
-  filterSession(
-    session: any,
+  filteritem(
+    item: any,
     queryWords: string[],
     excludecategorias: any[],
     segment: string
   ) {
     let matchesQueryText = false;
     if (queryWords.length) {
-      // of any query word is in the session name than it passes the query test
+      // of any query word is in the item name than it passes the query test
       queryWords.forEach((queryWord: string) => {
-        if (session.name.toLowerCase().indexOf(queryWord) > -1) {
+        if (item.name.toLowerCase().indexOf(queryWord) > -1) {
           matchesQueryText = true;
         }
       });
     } else {
-      // if there are no query words then this session passes the query test
+      // if there are no query words then this item passes the query test
       matchesQueryText = true;
     }
 
-    // if any of the sessions categorias are not in the
-    // exclude categorias then this session passes the track test
+    // if any of the items categorias are not in the
+    // exclude categorias then this item passes the categorias test
     let matchescategorias = false;
-    session.categorias.forEach((trackName: string) => {
-      if (excludecategorias.indexOf(trackName) === -1) {
+    item.categorias.forEach((categoriasName: string) => {
+      if (excludecategorias.indexOf(categoriasName) === -1) {
         matchescategorias = true;
       }
     });
 
-    // if the segment is 'favorites', but session is not a user favorite
-    // then this session does not pass the segment test
+    // if the segment is 'favorites', but item is not a user favorite
+    // then this item does not pass the segment test
     let matchesSegment = false;
     if (segment === 'favorites') {
-      if (this.user.hasFavorite(session.name)) {
+      if (this.user.hasFavorite(item.name)) {
         matchesSegment = true;
       }
     } else {
@@ -128,13 +128,13 @@ export class ConferenceData {
     }
 
     // all tests must be true if it should not be hidden
-    session.hide = !(matchesQueryText && matchescategorias && matchesSegment);
+    item.hide = !(matchesQueryText && matchescategorias && matchesSegment);
   }
 
-  getproveedors() {
+  getmiembro() {
     return this.load().pipe(
       map((data: any) => {
-        return data.proveedors.sort((a: any, b: any) => {
+        return data.miembro.sort((a: any, b: any) => {
           const aName = a.name.split(' ').pop();
           const bName = b.name.split(' ').pop();
           return aName.localeCompare(bName);
