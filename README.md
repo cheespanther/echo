@@ -1,8 +1,86 @@
 # ECHOMERCIO
 
-Esta aplicacion es para adminstrar una red social de economia circular desarrollada con Ionic Framework y Angular.
+## Introduccion
 
-¿Que es economia cirular?
+¿Que es economia circular?
+
+
+La economia circular es:
+
+Sin embargo, nosotros hemos identificado tres retos para la economia circular en Mexico que nos gustaria enfrentar a traves del diseño y desarrollo de una aplicacion web/movil.
+
+### Falta de conocimiento
+    1. La población en general no sabe como identificar ni manejar los diferentes tipos de residuos que se generan en la ciudad.4
+    2. Aunque muchos de nosotros compramos y vendemos articulos usados y reciclables, pocos comprendemos que participar en esto contribuye a la economia circular.   
+
+### Manejo de residuos
+    3. El manejo de residuos puede y debe involucrar a la ciudadanía, es decir, no es un problema de responsabilidad exclusiva de los gobiernos locales.
+
+### Falta de articulacion entre las personas y empresas que participan en la economia circular
+    3. Los sitios, empresas y grupos que se dedican al manejo de residuos y a la economía circular relacionada a los residuos no siempre son tan conocidos y están desarticulados. No existe una red de este tipo de empresas o sitios.
+
+Dicho lo anterior, ECHO es una plataforma que tiene tres objetivos relacionados a los retos explicados:
+
+    1. Contribuya a la formacion de una comunidad de personas que participan en la economia circular.
+    Esto se logra a traves de una app que tiene una app que facilita la:
+        ◦ El mapa/directorio de empresas/grupos que participan en algun tipo de economia circular:
+            ▪ Manejo de residuos orgánicos por ejemplo: Huerto Tlatelolco, viveros municipales, composteros municipales.
+            ▪ Manejo de residuos peligrosos como baterías, residuos hospitalarios, etc.
+            ▪ Compra/Venta de artículos usados (Tiendas de segunda, Bazaares de ropa usada, Ferias de productos locales, etc.
+            ▪ Manejo de residuos de jardinería
+            ▪ Manejo de residuos de construcción
+            ▪ Acopio y compra/venta de materiales recuperables
+    2. Proveer de contenido que eduque e incentive la economia circular
+        ◦ El juego tendría como objetivo enseñar 3 cosas:
+            ▪ Identificar los diferentes tipos de residuos
+            ▪ Identificar las opciones de manejo para cada tipo de residuo
+            ▪ Conocer y poder contactar a empresas y sitios que participan en la economía circular
+    3. Facilitar la ineraccion entre personas que activamente participan en la economia circular de Mexico.
+
+### uml: class diagram
+```plantuml
+    @startuml
+    package "customer domain" #DDDDDD {
+        class Contact {
+            + email
+            + phone
+        }
+
+        class Address {
+            + address1
+            + address2
+            + city
+            + region
+            + country
+            + postalCode
+            + organization
+        }
+
+        note right of Address
+            There are two types of
+            addresses: billing and shipping
+        end note
+
+        class Customer {
+        }
+
+        Customer *-- Contact
+        Customer *-- ShippingAddress
+        Customer *-- BillingAddress
+        Customer *--{ SalesOrder
+
+        class ShippingAddress <<Address>>
+        class BillingAddress <<Address>>
+        class SalesOrder {
+            + itemDescription
+            + itemPrice
+            + shippingCost
+            + trackingNumber
+            + shipDate
+        }
+    }
+    @enduml
+```
 
 **Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas. La base de datos de comercios se genero con datos del DENUE de la INEGI**
 
