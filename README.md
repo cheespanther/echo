@@ -44,8 +44,8 @@ Dicho lo anterior, ECHO es una plataforma que pretende contribuir a la formacion
 
 La red de miembros se clasifica en tres nivles de usuarios:
 
-  1. Usuario general - interesados en consumir o participar en la economia circular (clientes o posibles clientes)
-  2. Usuario empresarial - empresas, institutciones y grupos de la sociedad civil organizada involucrados en:
+  1. Miembro normal - interesados en consumir o participar en la economia circular (clientes o posibles clientes)
+  2. Miembro empresarial - empresas, institutciones y grupos de la sociedad civil organizada involucrados en:
             ▪ Manejo de residuos orgánicos
             ▪ Manejo de residuos peligrosos
             ▪ Compra/Venta de artículos usados
@@ -57,57 +57,59 @@ La red de miembros se clasifica en tres nivles de usuarios:
 
 **Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas en esta etapa. La base de datos de comercios se genero con datos del DENUE de la INEGI**
 
-## Contenido
-
-- 1. [Descripcion de la app](#descripcion-app)
-- 2. [Codigo](#codigo)
-- 3. [Descarga y contribuye](#descargaycontribuye)
-- 4. [Deploying](#deploying)
-  - [Progressive Web App](#progressive-web-app)
-  - [Android](#android)
-  - [iOS](#ios)
-
-
-## Descripcion de la app
+## Contenido de la app
 
 ### [Configuracion]()
 
-  Establece la zona que prefieres para tus consultas. Esto facilita y mejora los resultados de la aplicacion.
+Configuracion de parametros generales para mejorar la funcionalidad de la aplicacion:
+  * Zona (CDMX, Puebla, Monterrey, etc.)
+  * Intereses del usuario (A traves de un pequeño juego establecer parametros iniciales de la app)
 
 ### [Anuncios]()
 
-  Anuncia intenciones de vender, comprar o intercambiar:
+Permite a los usuarios tipo empresarial hacer anuncios para:
+  * Comercializar articulos relevante - productos locales, articulos reciclados, articulos usados, etc.
+  * Organizar eventos de la sociedad civil - bazaares de ropa usada, mercados de productores agricolas locales, etc.
+  * Anuncio de eventos gubernamentales o institucionales - Eventos de acopio organizados por institutos como el Reciclatron que organiza la UAM cada año.
 
-  * Articulos usados
-  * Residuos recuperables
+### [Miembros/Usuarios]()
 
-### [Eventos]()
+Permite participar en la red de la siguiente manera:
 
-  Organiza y participa en eventos relacionados con la "economia circular." Por ejemplo:
+  1. Comprar vender
+  2. Organizar Evento
+  3. Consultar informacion
+  4. Comunicarse con otros miembros de la rediuos
 
-  * Acopio de articulos electronicos que no se VENUSTIANO
-  * Bazaares de articulos usados (ropa, discos, etc.)
-  * Ferias de productos locales como: (Mercado del 100, Mercado de productores, Xochimilco)
-
-### [Miembros y contactos]()
-
-  Tres tipos de miembros de la red:
-
-  Tipos de usuarios:
+Niveles de miembros/usuarios
 
   1. Miembro normal - puede consultar anuncios y comercios y contactar a otros. Puede hacer pagos pero no cobros.
   2. Miembro empresarial - puede hacer anuncios y vender sus productos y servicios a traves de la aplicacion. Tiene acceso a un centro de pagos.
-  3. Administrador - puede acceder a la informacion del sitio y a modificar el codigo de la app y el sitio
-
+  3. Miembro administrador - puede acceder a la informacion del sitio y a modificar el codigo de la app y el sitio
 
 ### [Aprendizaje]()
 
-  * Juegos educativos que ayudan a sensibilizar y a aprender sobre la economia circular
-  * Directorio de documentos de consulta sobre economia circular
+  * Juegos educativos relacionados a la economia circular
+  * Directorio de documentos y sitios web relacionados a la economia circular
+  * Red de cursos en linea sobre la economia circular (gratiuitos y con costo)
+
+## Modelo de negocios:
+
+    1. Las cuentas no tendran costo
+    2. Publicar un evento o vender un articulo generaran una comision que servira para mantener la App
+    3. Publicidad de empresas o institutos involucrados en la economia circular
+    4. Costo por acceder a los datos que genere la aplicacion para actividades con fines de lucro
+    5. Algunos de los cursos/juegos ofrecidos tendran algun costo
 
 ## Codigo
 
-La aplicacion parte de la plantilla "conference" de IONIC.
+### Licencia
+
+La aplicacion parte de la plantilla "conference" de IONIC y hereda los mismos derechos. Es decir, todo el codigo de desarrollo de la app se puede utilizar para desarrollar otras apps similares o locales. Se documentara apropiadamente permitiendo a que personas en otras comunidades puedan hacer sus propias redes de econmia ciruclar.
+
+La licencia heredad de la plantilla de IONIC es la siguiente:
+
+Ver [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
 
 ### Dependencias
 
@@ -120,27 +122,12 @@ IONIC es un framework de Angular y requiere lo siguiente para poder "deploy":
 * Run `ionic serve` in a terminal from the project root.
 * Profit. :tada:
 
-#### Deploying
+### Deploying
 
-Para correr la app.
+INSERTAR INSTRUCCIONES PARA INSTALAR Y CORRER LA APP.
 
-### Progressive Web App
+## Equipo
 
-1. Un-comment [these lines](https://github.com/ionic-team/ionic2-app-base/blob/master/src/index.html#L21)
-2. Run `npm run ionic:build --prod`
-3. Push the `www` folder to your hosting service
-
-### Android
-
-1. Run `ionic cordova run android --prod`
-
-### iOS
-
-1. Run `ionic cordova run ios --prod`
-
-
-## Descarga y contribuye
-
-La licencia para contribuir se hereda de la licencia de la plantilla:
-
-Ver [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
+Semblanza Juan Carlos
+Semblanza David
+Semblanza Iskar
