@@ -2,31 +2,65 @@
 
 Esta aplicacion es para adminstrar una red social de economia circular desarrollada con Ionic Framework y Angular.
 
+¿Que es economia cirular?
+
 **Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas. La base de datos de comercios se genero con datos del DENUE de la INEGI**
 
-Tipos de usuarios:
-
-1. Usuario normal - puede consultar anuncios y comercios y contactar a otros. Puede hacer pagos pero no cobros.
-2. Usuario empresarial - puede hacer anuncios y vender sus productos y servicios a traves de la aplicacion. Tiene acceso a un centro de pagos.
-3. Administrador -
-
-
-
 ## Contenido
-- [Arrancar la app](#getting-started)
-- [Descarga y contribuye](#contributing)
-- [App Preview](#app-preview)
-- [Deploying](#deploying)
+
+- 1. [Descripcion de la app](#descripcion-app)
+- 2. [Codigo](#codigo)
+- 3. [Descarga y contribuye](#descargaycontribuye)
+- 4. [Deploying](#deploying)
   - [Progressive Web App](#progressive-web-app)
   - [Android](#android)
   - [iOS](#ios)
 
 
-## Arrancar la app
+## Descripcion de la app
+
+### [Configuracion]()
+
+  Establece la zona que prefieres para tus consultas. Esto facilita y mejora los resultados de la aplicacion.
+
+### [Anuncios]()
+
+  Anuncia intenciones de vender, comprar o intercambiar:
+
+  * Articulos usados
+  * Residuos recuperables
+
+### [Eventos]()
+
+  Organiza y participa en eventos relacionados con la "economia circular." Por ejemplo:
+
+  * Acopio de articulos electronicos que no se VENUSTIANO
+  * Bazaares de articulos usados (ropa, discos, etc.)
+  * Ferias de productos locales como:
+
+### [Miembros y contactos]()
+
+  Tres tipos de miembros de la red:
+
+  Tipos de usuarios:
+
+  1. Miembro normal - puede consultar anuncios y comercios y contactar a otros. Puede hacer pagos pero no cobros.
+  2. Miembro empresarial - puede hacer anuncios y vender sus productos y servicios a traves de la aplicacion. Tiene acceso a un centro de pagos.
+  3. Administrador - puede acceder a la informacion del sitio y a modificar el codigo de la app y el sitio
+
+
+### [Aprendizaje]()
+
+  * Juegos educativos que ayudan a sensibilizar y a aprender sobre la economia circular
+  * Directorio de documentos de consulta sobre economia circular
+
+## Codigo
+
+La aplicacion parte de la plantilla "conference" de IONIC.
 
 ### Dependencias
 
-
+IONIC es un framework de Angular y requiere lo siguiente para poder "deploy":
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
@@ -35,48 +69,9 @@ Tipos de usuarios:
 * Run `ionic serve` in a terminal from the project root.
 * Profit. :tada:
 
-_Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
+#### Deploying
 
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
-
-
-## App Preview
-
-### [Configuracion](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/menu/menu.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Menu](/resources/screenshots/android-menu.png) | ![iOS Menu](/resources/screenshots/ios-menu.png) |
-
-
-### [Anuncios](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/schedule/schedule.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Schedule](/resources/screenshots/android-schedule.png) | ![iOS Schedule](/resources/screenshots/ios-schedule.png) |
-
-### [Eventos](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-list/speaker-list.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speakers](/resources/screenshots/android-speakers.png) | ![iOS Speakers](/resources/screenshots/ios-speakers.png) |
-
-### [Miembros y contactos](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/speaker-detail/speaker-detail.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android Speaker Detail](/resources/screenshots/android-speaker-detail.png) | ![iOS Speaker Detail](/resources/screenshots/ios-speaker-detail.png) |
-
-### [Tutorial](https://github.com/ionic-team/ionic-conference-app/blob/master/src/app/pages/about/about.html)
-
-| Material Design  | iOS  |
-| -----------------| -----|
-| ![Android About](/resources/screenshots/android-about.png) | ![iOS About](/resources/screenshots/ios-about.png) |
-
-
-## Deploying
+Para correr la app.
 
 ### Progressive Web App
 
@@ -91,3 +86,10 @@ See [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/ma
 ### iOS
 
 1. Run `ionic cordova run ios --prod`
+
+
+## Descarga y contribuye
+
+La licencia para contribuir se hereda de la licencia de la plantilla:
+
+Ver [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
