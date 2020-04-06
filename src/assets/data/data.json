@@ -1,10 +1,10 @@
 {
   "items": [
     {
-      "date": "2047-05-17",
       "groups": [
         {
-          "time": "Abril",
+          "mes": "Abril",
+          "tipo": "Evento",
           "items": [
             {
               "name": "Venta de garage",
@@ -17,13 +17,14 @@
           ]
         },
         {
-          "time": "Mayo",
+          "mes": "Mayo",
+          "tipo": "Evento",
           "items": [
             {
               "name": "Remate de muebles por mudanza",
               "location": "El Rosario",
               "description": "Vendo muebles.",
-              "miembroNames": ["Ted Turtle"],
+              "miembroNames": ["Burt Bear"],
               "timeStart": "9:30 am",
               "timeEnd": "13:00 am",
               "categorias": ["Compra/Venta de articulos usados"],
@@ -31,9 +32,10 @@
             },
             {
               "name": "Bazaar de ropa vintage",
+              "tipo": "Evento",
               "location": "Colonia Roma",
               "description": "Evento aunual organizado.",
-              "miembroNames": ["Rachel Rabbit"],
+              "miembroNames": ["Burt Bear"],
               "timeStart": "9:45 am",
               "timeEnd": "19:00 pm",
               "categorias": ["Compra/Venta de articulos usados"],
@@ -42,67 +44,69 @@
           ]
         },
         {
-          "time": "Junio",
+          "mes": "Junio",
+          "tipo": "Evento",
           "items": [
             {
               "name": "Taller de compostaje",
               "location": "Planta de Composta de San Juan Aragon",
               "description": "Taller gratuito de produccion de composta.",
-              "miembroNames": ["Eva Eagle", "Lionel Lion"],
+              "miembroNames": ["Eva Eagle"],
               "timeStart": "10:00 am",
               "timeEnd": "10:15 am",
-              "categorias": ["Ionic"],
+              "categorias": ["Residuos organicos"],
               "id": "5"
             },
             {
               "name": "Del huerto a la mesa Huerto Tlatelolco",
               "location": "Huerto Tlatelolco",
               "description": "Venta de hortalizas y de productos locales. ",
-              "miembroNames": ["Rachel Rabbit"],
+              "miembroNames": ["Burt Bear"],
               "timeStart": "10:15 am",
               "timeEnd": "3:30 pm",
-              "categorias": ["Angular"],
+              "categorias": ["Residuos organicos"],
               "id": "6"
             },
             {
               "name": "Acopio de residuos tecnologicos",
               "location": "Estacionamiento Alcaldia Azcapotzalco",
               "description": "Recibiremos todo tipo de residuos tecnologicos durante todo el mes de.",
-              "miembroNames": ["Isabella Iguana", "Eva Eagle"],
+              "miembroNames": ["Eva Eagle"],
               "timeStart": "10:00 am",
               "timeEnd": "5:30 pm",
-              "categorias": ["Design"],
+              "categorias": ["Otros"],
               "id": "7"
             }
           ]
         },
         {
-          "time": "Julio",
+          "mes": "Julio",
+          "tipo": "Bazaar",
           "items": [
             {
               "name": "Venta de garage",
               "location": "Lomas de Chapultepec",
               "description": "Ropa vieja, muebles antiguos y mas!!!! Venta por mudanza.",
-              "miembroNames": ["Karl Kitten", "Lionel Lion"],
+              "miembroNames": ["Burt Bear"],
               "timeStart": "11:00 am",
               "timeEnd": "5:00 pm",
-              "categorias": ["Workshop"],
+              "categorias": ["Otros2"],
               "id": "9"
             },
             {
               "name": "Compro bolsas de marca.",
               "location": "Centro de Tlalpan",
               "description": "¿Quieres vender tu ropa de marca que ya no usas?",
-              "miembroNames": ["Lionel Lion", "Gino Giraffe"],
+              "miembroNames": ["Burt Bear"],
               "timeStart": "11:30 am",
               "timeEnd": "11:50 am",
-              "categorias": ["Communication"],
+              "categorias": ["Residuos inorganicos"],
               "id": "10"
             }
           ]
         },
         {
-          "time": "Agosto",
+          "mes": "Agosto",
           "items": [
             {
               "name": "Reciclatron 2020",
@@ -110,17 +114,17 @@
               "description": "Trae todos los aparatos viejos que no utilices.",
               "timeStart": "12:00 pm",
               "timeEnd": "1:00 pm",
-              "categorias": ["Food"],
+              "categorias": ["Otros2"],
               "id": "12"
             },
             {
               "name": "Recoleccion de PET Alcalda Cuauhtemoc",
               "location": "Centro de acopio",
               "description": "",
-              "miembroNames": ["Paul Puppy"],
+              "miembroNames": ["Donald Duck"],
               "timeStart": "1:00 pm",
               "timeEnd": "1:15 pm",
-              "categorias": ["Communication"],
+              "categorias": ["Servicios publicos"],
               "id": "13"
             }
           ]

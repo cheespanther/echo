@@ -19,7 +19,7 @@
   <div *ngIf="item" class="ion-padding">
     <h1>{{item.name}}</h1>
     <span *ngFor="let track of item?.tracks" [class]="'item-track-'+track.toLowerCase()">{{track}}</span>
-    <p>{{item.description}}</p>
+    <p>{{item.location}}</p>
     <ion-text color="medium">
       {{item.timeStart}} &ndash; {{item.timeEnd}}
       <br /> {{item.location}}

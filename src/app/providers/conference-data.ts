@@ -82,7 +82,7 @@ export class ConferenceData {
             }
           });
         });
-
+// filtro de items por dia!!!!
         return day;
       })
     );

@@ -30,10 +30,10 @@
       <ion-segment-button value="todo">
         Todo
       </ion-segment-button>
-      <ion-segment-button value="eventos">
+      <ion-segment-button value="Evento">
         Eventos
       </ion-segment-button>
-      <ion-segment-button value="anuncios">
+      <ion-segment-button value="Anuncios">
         Anuncios
       </ion-segment-button>
     </ion-segment>
@@ -43,10 +43,10 @@
 <ion-content fullscreen="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">items</ion-title>
+      <ion-title size="large">Anuncios</ion-title>
     </ion-toolbar>
     <ion-toolbar>
-      <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateitems()" placeholder="Search"></ion-searchbar>
+      <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateitems()" placeholder="Buscar"></ion-searchbar>
     </ion-toolbar>
   </ion-header>
 
@@ -54,7 +54,7 @@
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
       <ion-item-divider sticky>
         <ion-label>
-          {{group.time}}
+          {{group.mes}}
         </ion-label>
       </ion-item-divider>
 
@@ -64,7 +64,12 @@
           <ion-label>
             <h3>{{item.name}}</h3>
             <p>
-              {{item.timeStart}} &mdash; {{item.timeEnd}}: {{item.location}}
+              {{item.timeStart}} &mdash; {{item.timeEnd}} <br>
+              Tipo: {{group.tipo}} <br>
+              Categoria: {{item.categorias}} <br>
+              Lugar: {{item.location}} <br>
+              Organizadores: {{item.miembroNames}} 
+
             </p>
           </ion-label>
         </ion-item>
