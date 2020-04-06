@@ -37,7 +37,7 @@ Dicho lo anterior, ECHO es una plataforma que tiene tres objetivos relacionados 
             ▪ Conocer y poder contactar a empresas y sitios que participan en la economía circular
     3. Facilitar la ineraccion entre personas que activamente participan en la economia circular de Mexico.
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Zingam/Markdown-Document-UML-Use-Test/master/UML/Instance.puml)
+![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/cheespanther/echo/README.puml)
 
 **Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas. La base de datos de comercios se genero con datos del DENUE de la INEGI**
 
