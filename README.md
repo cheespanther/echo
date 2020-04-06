@@ -4,42 +4,58 @@
 
 ¿Que es economia circular?
 
+La economia circular se refiere a modos de consumo que procuran :
 
-La economia circular es:
+  1. Reducir la entrada de materiales nuevos en la produccion
+  2. Reducir la produccion de desecho
+  3. Cerrar los flujos economicos y ecologicos de los recursos
 
-Sin embargo, nosotros hemos identificado tres retos para la economia circular en Mexico que nos gustaria enfrentar a traves del diseño y desarrollo de una aplicacion web/movil.
+De esta manera reduciendo el impacto ambiental de los patrones de consumo. Algunas estrategias relacionadas a la economia ciruclar son:
 
-## Falta de conocimiento
-    1. La población en general no sabe como identificar ni manejar los diferentes tipos de residuos que se generan en la ciudad.4
-    2. Aunque muchos de nosotros compramos y vendemos articulos usados y reciclables, pocos comprendemos que participar en esto contribuye a la economia circular.   
+  1. Reutilizacion de envases
+  2. Disminusion de empaques no necesarios
+  3. Consumo local de productos de primera necesidad
+  4. Consumo de productos usados
 
-## Manejo de residuos
-    3. El manejo de residuos puede y debe involucrar a la ciudadanía, es decir, no es un problema de responsabilidad exclusiva de los gobiernos locales.
+En los proximos años la transicion de habitos de consumo hacia una economia circular enfrentara grandes retos.
 
-## Falta de articulacion entre las personas y empresas que participan en la economia circular
-    3. Los sitios, empresas y grupos que se dedican al manejo de residuos y a la economía circular relacionada a los residuos no siempre son tan conocidos y están desarticulados. No existe una red de este tipo de empresas o sitios.
+Para el RetoCDMX, hemos identificado tres retos particulares para la economia circular en Mexico que nos gustaria enfrentar a traves del diseño y desarrollo de una aplicacion web/movil.
 
-Dicho lo anterior, ECHO es una plataforma que tiene tres objetivos relacionados a los retos explicados:
+## Reto 1: Falta de conocimiento
 
-    1. Contribuya a la formacion de una comunidad de personas que participan en la economia circular.
-    Esto se logra a traves de una app que tiene una app que facilita la:
-        ◦ El mapa/directorio de empresas/grupos que participan en algun tipo de economia circular:
-            ▪ Manejo de residuos orgánicos por ejemplo: Huerto Tlatelolco, viveros municipales, composteros municipales.
-            ▪ Manejo de residuos peligrosos como baterías, residuos hospitalarios, etc.
-            ▪ Compra/Venta de artículos usados (Tiendas de segunda, Bazaares de ropa usada, Ferias de productos locales, etc.
+Algunos retos para la economia circular tiene que ver con la formacion de ciudadanos mas dispuestos a los cambios de habitos que implica la economia ciruclar. Para lograr una transicion hacia una economia circular es importante que las personas empiecen a identificar que es, como funciona, por que es importante y como pueden participar.
+
+En este sentido, una de las secciones de la app que proponemos incluye esta enfocada a la difusion de informacion y educacion sobre temas pertienentes a la economia circular como los tipos de residuos, las formas en que se tratan los rediuos, el consumo local, entre otros.
+
+2. Proveer de contenido que eduque e incentive la economia circular
+    ◦ El juego tendría como objetivo enseñar 3 cosas:
+        ▪ Identificar los diferentes tipos de residuos
+        ▪ Identificar las opciones de manejo para cada tipo de residuo
+        ▪ Conocer y poder contactar a empresas y sitios que participan en la economía circular
+
+## Reto 2: Falta de articulacion entre las personas y empresas que participan en la economia circular
+
+Los sitios, empresas y grupos que se dedican al manejo de residuos y a la economía circular relacionada a los residuos no siempre son tan conocidos y están desarticulados. Los mercados de productos locales, los bazaares de articulos usados, los centros de acopio de materiales recuperables, las platnas de copostaje entre otros, son algunos de las empresas y serivicios que forman parte de la red de personas involucradas en la economia circular.
+
+Dicho lo anterior, ECHO es una plataforma que pretende contribuir a la formacion de una comunidad de personas que participan en la economia circular a traves de ofrecer:
+
+  1. Mapa/directorio de empresas/grupos que participan en algun tipo de economia circular
+  2. Red social de personas y grupos de personas interesados
+
+La red de miembros se clasifica en tres nivles de usuarios:
+
+  1. Usuario general - interesados en consumir o participar en la economia circular (clientes o posibles clientes)
+  2. Usuario empresarial - empresas, institutciones y grupos de la sociedad civil organizada involucrados en:
+            ▪ Manejo de residuos orgánicos
+            ▪ Manejo de residuos peligrosos
+            ▪ Compra/Venta de artículos usados
             ▪ Manejo de residuos de jardinería
             ▪ Manejo de residuos de construcción
             ▪ Acopio y compra/venta de materiales recuperables
-    2. Proveer de contenido que eduque e incentive la economia circular
-        ◦ El juego tendría como objetivo enseñar 3 cosas:
-            ▪ Identificar los diferentes tipos de residuos
-            ▪ Identificar las opciones de manejo para cada tipo de residuo
-            ▪ Conocer y poder contactar a empresas y sitios que participan en la economía circular
-    3. Facilitar la ineraccion entre personas que activamente participan en la economia circular de Mexico.
+            ▪ Productores locales
+  3. Administradores - usuarios interesados en utilizar los datos y la informacion que se genere en la app sin fines de lucro para investigar, regular y/o impulsar la economia circular. Se refiere principalmente a tomadores de decisiones, investigadores y organizaciones de la sociedad civil.
 
-![Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://github.com/cheespanther/echo/README.puml)
-
-**Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas. La base de datos de comercios se genero con datos del DENUE de la INEGI**
+**Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas en esta etapa. La base de datos de comercios se genero con datos del DENUE de la INEGI**
 
 ## Contenido
 
@@ -71,7 +87,7 @@ Dicho lo anterior, ECHO es una plataforma que tiene tres objetivos relacionados 
 
   * Acopio de articulos electronicos que no se VENUSTIANO
   * Bazaares de articulos usados (ropa, discos, etc.)
-  * Ferias de productos locales como:
+  * Ferias de productos locales como: (Mercado del 100, Mercado de productores, Xochimilco)
 
 ### [Miembros y contactos]()
 
