@@ -1,5 +1,4 @@
-# ECHO
-### Red de Economía Circular en México
+# ECHO ### Red de Economía Circular en México
 
 Plataforma web y app de networking social que contribuye la generación de redes de economía circular; capacitando y conectando a los distintos actores en formas de consumo responsable.
 
@@ -34,7 +33,7 @@ Proveerá de contenido que instruya sobre e incentive la economía circular a tr
 
 ### Reto 2: Falta de articulación entre los diferentes "actores" que participan en la economía circular
 
-Los sitios, empresas y grupos que particpan en actividades relacionadas a la economía circular (productores locales, recicladoras, plantas de compostaje, entre otros) no siempre son tan conocidos y están desarticulados. Por la forma en que operan, no tienen mecanismos y estructuras tan robustas como las empresas multinacionales con las cuales a menudo compiten. 
+Los sitios, empresas y grupos que particpan en actividades relacionadas a la economía circular (productores locales, recicladoras, plantas de compostaje, entre otros) no siempre son tan conocidos y están desarticulados. Por la forma en que operan, no tienen mecanismos y estructuras tan robustas como las empresas multinacionales con las cuales a menudo compiten.
 
 Dicho lo anterior, ECHO es una plataforma que pretende contribuir a la construcción de una comunidad que incluya a los diversos "actores" que participan en la economía circular al funcionar como un:
 
@@ -139,7 +138,7 @@ El éxito de cualquier proyecto requier de estrategias de financiamiento para qu
 
 ### Licencia
 
-La aplicación "demo" de este repositorio parte de la plantilla "conference" de IONIC y hereda los mismos derechos. Es decir, todo el codigo de desarrollo de la app se puede utilizar para desarrollar otras apps similares o locales. 
+La aplicación "demo" de este repositorio parte de la plantilla "conference" de IONIC y hereda los mismos derechos. Es decir, todo el codigo de desarrollo de la app se puede utilizar para desarrollar otras apps similares o locales.
 
 Se documentará apropiadamente permitiendo a que personas en otras comunidades puedan hacer sus propias redes de economía ciruclar.
 
