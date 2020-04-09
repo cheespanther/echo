@@ -1,7 +1,10 @@
 <ion-header no-border>
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+      <ion-button fill="clear" [routerLink]="['/login']">
+        Saltar
+        <ion-icon slot="end" name="arrow-forward"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -9,39 +12,43 @@
 <ion-content fullscreen="true">
   <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+      <img src="assets/img/echomercio_logo.png" class="slide-image" />
       <h2 class="slide-title">
-        Welcome to
-        <b>ICA</b>
+        Bienvenido a ECHO. <br> Red de Economia Ciruclar en Mexico.
       </h2>
       <p>
-        The
-        <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code
-        use.
+        <b>ECHO</b> es una plataforma web y app para Android y Apple donde podras aprender sobre y participar en la economia circular de tu ciudad.
       </p>
     </ion-slide>
 
     <ion-slide>
+      <img src="assets/img/diagrama_economia_circular.png" class="slide-image" />
+      <h2 class="slide-title">¿Que es la economia circular?</h2>
+        <p>La <b>economia circular</b> se refiere a modos de consumo que procuran:<br>
+          1. Consumo responsable que reduzca la introduccion de materiales nuevos<br>
+          2. Produccion responsable con materiales reutilizables o reutilizados<br>
+          3. Reutilizar, reciclar y reparar productos<br>
+        </p>
+    </ion-slide>
+
+    <ion-slide>
       <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic?</h2>
+      <h2 class="slide-title">¿Como funciona ECHO?</h2>
       <p>
-        <b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies
-        like HTML, CSS, and JavaScript.</p>
+        <b>ECHO</b> es una plataforma donde econtraras: <br>
+        1. Mapa y derectorio de empresas, instutciones y organizacoines civiles que participen en la economia circular<br>
+        2. Una red social de personas como tu que quieran participar en la economia ciruclar<br>
+        3. Contenido interesante y educativo sobre la <b>economia circular</b><br>
+        4. Informacion sobre la <b>economia circular</b> en tu ciudad<br>
+      </p>
+
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic Appflow?</h2>
-      <p>
-        <b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new
-        level of app development agility to mobile dev teams.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">Ready to Play?</h2>
-      <ion-button fill="clear" (click)="startApp()">
-        Continue
+      <img src="assets/img/echomercio_logo.png" class="slide-image" />
+      <h2 class="slide-title">¿Estas listo para unirte a <b>ECHO</b>?</h2>
+      <ion-button fill="clear" [routerLink]="['/login']">
+        Entra
         <ion-icon slot="end" name="arrow-forward"></ion-icon>
       </ion-button>
     </ion-slide>
