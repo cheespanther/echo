@@ -89,6 +89,9 @@ Permite a los usuarios tipo empresarial hacer anuncios para:
   * Organizar eventos de la sociedad civil - bazaares de ropa usada, mercados de productores agricolas locales, etc.
   * Anuncio de eventos gubernamentales o institucionales - Eventos de acopio organizados por institutos como el Reciclatron que organiza la UAM cada año.
 
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/anuncios.png)
+
+
 ### Seccion 3: [Miembros/Usuarios]()
 
 Esta seccion corresponde al menu del usuario donde, segun el tipo de cuenta que tenga, puede:
@@ -97,6 +100,9 @@ Esta seccion corresponde al menu del usuario donde, segun el tipo de cuenta que 
   2. Organizar y participar en eventos relacionados a la economia ciruclar
   3. Consultar informacion sobre la economia circular
   4. Comunicarse con otros miembros de la red de usuarios
+
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/contactos.png)
+
 
 Es importante mantener cierto control sobre de quien hace que dentro de la red, es por eso que se proponen tres tipos de miembros/usuarios con distintos niveles de acceso.
 
@@ -111,6 +117,9 @@ Uno de los objetivos de la aplicacion es que los usuarios puedan aprender mas so
   1. Juegos educativos relacionados a la economia circular
   2. Directorio de documentos y sitios web relacionados a la economia circular
   3. Cursos en linea sobre la economia circular (gratiuitos y con costo)
+
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/tutorial.png)
+
 
 ## 3. Modelo de negocios:
 
