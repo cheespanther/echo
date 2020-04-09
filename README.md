@@ -1,56 +1,50 @@
 # ECHO
+### Red de Economía Circular en México
 
-Aplicacion y red social que tiene dos objetivos generales:
+Plataforma web y app de networking social que contribuye la generación de redes de economía circular; capacitando y conectando a los distintos actores en formas de consumo responsable.
 
-  1. Proveer de contenido educativo y de divulgacion que promueva y propicie la participacion en la economia circular
-  2. Contribuya la construccion de una red de los diferentes tipos de "actores" que participan en la economia circular
+## 1. Introducción
 
-## 1. Introduccion
+¿Qué es economía circular?
 
-¿Que es economia circular?
+La economía circular se refiere a modos de consumo que procuran:
 
-La economia circular se refiere a modos de consumo que procuran :
-
-  1. Reducir la entrada de materiales nuevos en la produccion
-  2. Reducir la produccion de desecho
+  1. Reducir la entrada de materiales nuevos en la producción
+  2. Reducir la producción de desecho
   3. Cerrar los flujos economicos y ecologicos de los recursos
 
 De esta manera reduciendo el impacto ambiental de los patrones de consumo. Algunas estrategias relacionadas a la economia ciruclar son:
 
-  1. Reutilizacion de envases
-  2. Disminusion de empaques no necesarios
+  1. Reutilización de envases
+  2. Disminución de empaques no necesarios
   3. Consumo local de productos de primera necesidad
   4. Consumo de productos usados
 
-En los proximos años la transicion de habitos de consumo hacia una economia circular enfrentara grandes retos.
+En los proximos años la transición de habitos de consumo hacia una economia circular enfrentara grandes retos.
 
-Para el RetoCDMX, hemos identificado tres retos particulares para la economia circular en Mexico que nos gustaria enfrentar a traves del diseño y desarrollo de una aplicacion web/movil.
+Para el RetoCDMX, hemos identificado tres retos particulares para la economía circular en México que nos gustaria enfrentar a traves del diseño y desarrollo de una aplicación web/movil.
 
 ### Reto 1: Falta de conocimiento
 
-Algunos retos para la economia circular tiene que ver con la formacion de ciudadanos mas dispuestos a los cambios de habitos que implica la economia ciruclar. Para lograr una transicion hacia una economia circular es importante que las personas empiecen a identificar que es, como funciona, por que es importante y como pueden participar.
+Algunos retos para la economía circular tiene que ver con la formación de ciudadanos mas dispuestos a los cambios de habitos implicados en la economía ciruclar. Para lograr una transición hacia una economía circular es importante que las personas empiecen a identificar qué es, cómo funciona, por qué es importante y como pueden participar.
 
-En este sentido, una de las secciones de la app que proponemos incluye esta enfocada a la difusion de informacion y educacion sobre temas pertienentes a la economia circular como los tipos de residuos, las formas en que se tratan los rediuos, el consumo local, entre otros.
+En este sentido, una de las secciones de la plataforma que se propone:
 
-2. Proveer de contenido que eduque e incentive la economia circular
-    ◦ El juego tendría como objetivo enseñar 3 cosas:
-        ▪ Identificar los diferentes tipos de residuos
-        ▪ Identificar las opciones de manejo para cada tipo de residuo
-        ▪ Conocer y poder contactar a empresas y sitios que participan en la economía circular
+Proveerá de contenido que instruya sobre e incentive la economía circular a través de la divulgación de contenido relacionado, cursos y juegos en línea.
 
-### Reto 2: Falta de articulacion entre las personas y empresas que participan en la economia circular
+### Reto 2: Falta de articulación entre los diferentes "actores" que participan en la economía circular
 
-Los sitios, empresas y grupos que se dedican al manejo de residuos y a la economía circular relacionada a los residuos no siempre son tan conocidos y están desarticulados. Los mercados de productos locales, los bazaares de articulos usados, los centros de acopio de materiales recuperables, las platnas de copostaje entre otros, son algunos de las empresas y serivicios que forman parte de la red de personas involucradas en la economia circular.
+Los sitios, empresas y grupos que particpan en actividades relacionadas a la economía circular (productores locales, recicladoras, plantas de compostaje, entre otros) no siempre son tan conocidos y están desarticulados. Por la forma en que operan, no tienen mecanismos y estructuras tan robustas como las empresas multinacionales con las cuales a menudo compiten. 
 
-Dicho lo anterior, ECHO es una plataforma que pretende contribuir a la formacion de una comunidad de personas que participan en la economia circular a traves de ofrecer:
+Dicho lo anterior, ECHO es una plataforma que pretende contribuir a la construcción de una comunidad que incluya a los diversos "actores" que participan en la economía circular al funcionar como un:
 
-  1. Mapa/directorio de empresas/grupos que participan en algun tipo de economia circular
-  2. Red social de personas y grupos de personas interesados
+  1. Mapa/directorio de empresas y organizaciones involucradas en alguna forma de economía circular
+  2. Red de networking para grupos y personas de personas interesadas en la economía circular
 
-La red de miembros se clasifica en tres nivles de usuarios:
+La red tendría tres tipos de miembros/usuarios:
 
   1. Miembro normal - interesados en consumir o participar en la economia circular (clientes o posibles clientes)
-  2. Miembro empresarial - empresas, institutciones y grupos de la sociedad civil organizada involucrados en:
+  2. Miembro empresarial - empresas, organizaciones y grupos de la sociedad civil que estén involucradas en alguna de las siguientes actividades:
             ▪ Manejo de residuos orgánicos
             ▪ Manejo de residuos peligrosos
             ▪ Compra/Venta de artículos usados
@@ -58,31 +52,29 @@ La red de miembros se clasifica en tres nivles de usuarios:
             ▪ Manejo de residuos de construcción
             ▪ Acopio y compra/venta de materiales recuperables
             ▪ Productores locales
-  3. Administradores - usuarios interesados en utilizar los datos y la informacion que se genere en la app sin fines de lucro para investigar, regular y/o impulsar la economia circular. Se refiere principalmente a tomadores de decisiones, investigadores y organizaciones de la sociedad civil.
-
-**Los datos son reales, pero no hay ningun contacto con lo usuarios y empresas en esta etapa. La base de datos de comercios se genero con datos del DENUE de la INEGI**
+  3. Miembro administrador - son aquellos interesados en utilizar los datos y la informacion que se genere en la app sin fines de lucro para investigar, regular y/o impulsar la economia circular como instancias del gobierno, centros de investigación, ONGs, entre otros.
 
 ## 2. Descripcion de la propuesta
 
-Proponemos una aplicacion web/mobil desarrollada con
+Desarrollar una plataforma web y aplicación móvil para Android e iOS con
 
 * Angular
 * IOINIC
-* Manejador de bases de datos por definir
+* Laravel
 
-Que contribuya a 1) ofrecer contenido educativo y de divulgacion que promueva la economia ciruclar y 2) construir una red de los diferentes actores que participan en la economia circular (compradores, proveedores, sociedad civil organizada e institutciones)
+Las funcionalidades de la plataforma/app giran en torno a 1) ofrecer contenido educativo y de divulgacion que promueva la economia ciruclar y 2) construir una red de los diferentes actores que participan en la economia circular (compradores, proveedores, sociedad civil organizada e institutciones)
 
-El prototipo de la app esta compuesta de 4 secciones de contenido mas la funcionalidad basica de cualquier app como dar de alta y modificar una cuenta y perfil de usuario.
+El contenido de este repositorio es un prototipo operacional con datos muestra de la app esta compuesta de 4 funciones generales
 
-### Seccion 1: Configuracion
+### Función 1: Configuración
 
-En esta seccion de la app el usuario puede configurar ciertos parametros generales de ubiacion y gustos para mejorar la funcionalidad de la aplicacion:
-  * Zona (CDMX, Puebla, Monterrey, etc.)
-  * Intereses del usuario (A traves de un pequeño juego establecer parametros iniciales de la app)
+En esta seccion de la app el usuario puede configurar ciertos parametros generales de ubiacion e intereses para mejorar la funcionalidad de la aplicacion:
+  * Zona
+  * Intereses del usuario
 
   ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/configuracion.png)
 
-### Seccion 2: Anuncios
+### Función 2: Anuncios
 
 La seccion de "anuncios" permite a los usuarios consultar y crear anuncios para:
   * Promover productos y servicios relevantes a la economia circular - productos locales, articulos reciclados, articulos usados, etc.
@@ -91,27 +83,27 @@ La seccion de "anuncios" permite a los usuarios consultar y crear anuncios para:
 
 Los anuncios se pueden consultar en un listado o por un mapa.
 
-#### Listado de anuncios/eventos
+#### Captura de pantalla de: Listado de anuncios/eventos
 
   ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/items.png)
 
-#### Mapa de usuarios y Eventos
+#### Captura de pantalla de: Mapa de usuarios y Eventos
 
 ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/mapa.png)
 
 
-### Seccion 3: Miembros/Usuarios
+### Función 3: Menú de usuarios
 
-Esta seccion corresponde al menu del usuario donde, segun el tipo de cuenta que tenga, puede:
+En el menú de usuarios, segun el tipo de cuenta que tenga, es posible:
 
   1. Comprar, vender y ofrecer servicios relacoinados a la economia circular
   2. Organizar y participar en eventos relacionados a la economia ciruclar
   3. Consultar informacion sobre la economia circular
   4. Comunicarse con otros miembros de la red de usuarios
 
-La comunicacion entre usuarios funcionaria como la de cualquier red de networking social. Habra un listado de contactos de los usuarios con los cuales quiera comunicarse. Al igual que para los anuncios se puede consultar por una lista o en un mapa.
+La comunicacion entre usuarios funcionaria como la de cualquier red de networking social. Cada usuario irá creando un listado de contactos de los con los cuales quiera comunicarse. Al igual que para los anuncios se puede consultar por una lista o en un mapa.
 
-#### Lista de contactos
+#### Captura de pantalla de: Lista de contactos
 
   ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/contactos.png)
 
@@ -123,19 +115,19 @@ Es importante mantener cierto control sobre de quien hace que dentro de la red, 
 
 ### Seccion 4: Aprendizaje
 
-Uno de los objetivos de la aplicacion es que los usuarios puedan aprender mas sobre la econmia circular; que es, porque es importante y como podemos participar como ciudadanos. En este sentido, la seccion de "aprendizaje" de la app incluye lo siguiente:
+Uno de los objetivos de la aplicación es que los usuarios puedan aprendan sobre la econmia circular y como pueden participar en ella. En este sentido, la sección de "aprendizaje" de la app incluye lo siguiente:
 
   1. Juegos educativos relacionados a la economia circular
   2. Directorio de documentos y sitios web relacionados a la economia circular
   3. Cursos en linea sobre la economia circular (gratiuitos y con costo)
 
-#### Tutorial de como usar ECHO
+#### Captura de pantalla de: Tutorial de como usar ECHO
 
   ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/tutorial.png)
 
-## 3. Modelo de negocios:
+## 3. Modelo de negocios
 
-El financiamiento del proyecto es importante para que logre cierta independencia de fondos y concursos como RetoCDMX. Es por eso que se plantea tabien un modelo de negocios sencillo.
+El éxito de cualquier proyecto requier de estrategias de financiamiento para que logre cierta independencia de fondos y concursos como RetoCDMX. Es por eso que se tiene pensado desarrollar un modelo de negocios que considera lo siguiente:
 
     1. Las cuentas no tendran costo
     2. Publicar un evento o vender un articulo generaran una comision que servira para mantener la App
@@ -147,15 +139,17 @@ El financiamiento del proyecto es importante para que logre cierta independencia
 
 ### Licencia
 
-La aplicacion parte de la plantilla "conference" de IONIC y hereda los mismos derechos. Es decir, todo el codigo de desarrollo de la app se puede utilizar para desarrollar otras apps similares o locales. Se documentara apropiadamente permitiendo a que personas en otras comunidades puedan hacer sus propias redes de econmia ciruclar.
+La aplicación "demo" de este repositorio parte de la plantilla "conference" de IONIC y hereda los mismos derechos. Es decir, todo el codigo de desarrollo de la app se puede utilizar para desarrollar otras apps similares o locales. 
 
-La licencia heredad de la plantilla de IONIC es la siguiente:
+Se documentará apropiadamente permitiendo a que personas en otras comunidades puedan hacer sus propias redes de economía ciruclar.
+
+La licencia herdada de la plantilla de IONIC es:
 
 Ver [CONTRIBUTING.md](https://github.com/ionic-team/ionic-conference-app/blob/master/.github/CONTRIBUTING.md) :tada::+1:
 
 ### Dependencias
 
-IONIC es un framework de Angular y requiere lo siguiente para poder "deploy":
+IONIC es un framework de Angular y requiere lo siguiente para poder probar la app "demo":
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
