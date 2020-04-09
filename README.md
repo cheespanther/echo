@@ -74,25 +74,33 @@ Que contribuya a 1) ofrecer contenido educativo y de divulgacion que promueva la
 
 El prototipo de la app esta compuesta de 4 secciones de contenido mas la funcionalidad basica de cualquier app como dar de alta y modificar una cuenta y perfil de usuario.
 
-### Seccion 1: [Configuracion]()
+### Seccion 1: Configuracion
 
-Configuracion de parametros generales para mejorar la funcionalidad de la aplicacion:
+En esta seccion de la app el usuario puede configurar ciertos parametros generales de ubiacion y gustos para mejorar la funcionalidad de la aplicacion:
   * Zona (CDMX, Puebla, Monterrey, etc.)
   * Intereses del usuario (A traves de un pequeño juego establecer parametros iniciales de la app)
 
   ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/configuracion.png)
 
-### Seccion 2: [Anuncios]()
+### Seccion 2: Anuncios
 
-Permite a los usuarios tipo empresarial hacer anuncios para:
-  * Comercializar articulos relevante - productos locales, articulos reciclados, articulos usados, etc.
-  * Organizar eventos de la sociedad civil - bazaares de ropa usada, mercados de productores agricolas locales, etc.
-  * Anuncio de eventos gubernamentales o institucionales - Eventos de acopio organizados por institutos como el Reciclatron que organiza la UAM cada año.
+La seccion de "anuncios" permite a los usuarios consultar y crear anuncios para:
+  * Promover productos y servicios relevantes a la economia circular - productos locales, articulos reciclados, articulos usados, etc.
+  * Organizar eventos relevantes a la economia circular - bazaares de ropa usada, ferias de productores locales, etc.
+  * Publicar avisos gubernamentales o institucionales - Eventos de acopio organizados por institutos como el Reciclatron que organiza la UAM
 
-  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/anuncios.png)
+Los anuncios se pueden consultar en un listado o por un mapa.
+
+#### Listado de anuncios/eventos
+
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/items.png)
+
+#### Mapa de usuarios y Eventos
+
+![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/mapa.png)
 
 
-### Seccion 3: [Miembros/Usuarios]()
+### Seccion 3: Miembros/Usuarios
 
 Esta seccion corresponde al menu del usuario donde, segun el tipo de cuenta que tenga, puede:
 
@@ -101,8 +109,11 @@ Esta seccion corresponde al menu del usuario donde, segun el tipo de cuenta que 
   3. Consultar informacion sobre la economia circular
   4. Comunicarse con otros miembros de la red de usuarios
 
-  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/contactos.png)
+La comunicacion entre usuarios funcionaria como la de cualquier red de networking social. Habra un listado de contactos de los usuarios con los cuales quiera comunicarse. Al igual que para los anuncios se puede consultar por una lista o en un mapa.
 
+#### Lista de contactos
+
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/contactos.png)
 
 Es importante mantener cierto control sobre de quien hace que dentro de la red, es por eso que se proponen tres tipos de miembros/usuarios con distintos niveles de acceso.
 
@@ -110,7 +121,7 @@ Es importante mantener cierto control sobre de quien hace que dentro de la red, 
   2. Miembro empresarial - puede hacer anuncios y vender sus productos y servicios a traves de la aplicacion. Tiene acceso a un centro de pagos.
   3. Miembro administrador - puede acceder a la informacion del sitio y a modificar el codigo de la app y el sitio
 
-### Seccion 4: [Aprendizaje]()
+### Seccion 4: Aprendizaje
 
 Uno de los objetivos de la aplicacion es que los usuarios puedan aprender mas sobre la econmia circular; que es, porque es importante y como podemos participar como ciudadanos. En este sentido, la seccion de "aprendizaje" de la app incluye lo siguiente:
 
@@ -118,8 +129,9 @@ Uno de los objetivos de la aplicacion es que los usuarios puedan aprender mas so
   2. Directorio de documentos y sitios web relacionados a la economia circular
   3. Cursos en linea sobre la economia circular (gratiuitos y con costo)
 
-  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/tutorial.png)
+#### Tutorial de como usar ECHO
 
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/tutorial.png)
 
 ## 3. Modelo de negocios:
 
