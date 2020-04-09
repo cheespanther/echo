@@ -80,6 +80,8 @@ Configuracion de parametros generales para mejorar la funcionalidad de la aplica
   * Zona (CDMX, Puebla, Monterrey, etc.)
   * Intereses del usuario (A traves de un pequeño juego establecer parametros iniciales de la app)
 
+  ![alt text](https://raw.githubusercontent.com/cheespanther/echo/master/resources/screenshots/configuracion.png)
+
 ### Seccion 2: [Anuncios]()
 
 Permite a los usuarios tipo empresarial hacer anuncios para:
